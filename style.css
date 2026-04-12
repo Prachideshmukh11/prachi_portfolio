@@ -1,0 +1,54 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.impact {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.timeline .item {
+  border-left: 2px solid #38bdf8;
+  margin: 20px;
+  padding-left: 10px;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.resume-btn {
+  background: #22c55e;
+  padding: 5px 10px;
+}
