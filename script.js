@@ -1,34 +1,28 @@
-const roles = [
-  "DevOps Engineer",
-  "Cloud Engineer",
-  "Automation Specialist"
-];
+const roles = ["DevOps Engineer", "Cloud Engineer", "Automation Specialist"];
 
 let i = 0;
 let j = 0;
 let current = "";
-let isDeleting = false;
+let deleting = false;
 
 function type() {
-  const element = document.querySelector(".typing");
+  const el = document.querySelector(".typing");
 
-  if (i < roles.length) {
-    if (!isDeleting && j <= roles[i].length) {
-      current = roles[i].substring(0, j++);
-    } else if (isDeleting && j >= 0) {
-      current = roles[i].substring(0, j--);
-    }
-
-    element.textContent = current;
-
-    if (j === roles[i].length) isDeleting = true;
-    if (j === 0 && isDeleting) {
-      isDeleting = false;
-      i = (i + 1) % roles.length;
-    }
+  if (!deleting && j <= roles[i].length) {
+    current = roles[i].substring(0, j++);
+  } else if (deleting && j >= 0) {
+    current = roles[i].substring(0, j--);
   }
 
-  setTimeout(type, isDeleting ? 50 : 100);
+  el.textContent = current;
+
+  if (j === roles[i].length) deleting = true;
+  if (j === 0 && deleting) {
+    deleting = false;
+    i = (i + 1) % roles.length;
+  }
+
+  setTimeout(type, deleting ? 50 : 100);
 }
 
 type();
