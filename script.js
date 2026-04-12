@@ -22,7 +22,7 @@ function type() {
     i = (i + 1) % roles.length;
   }
 
-  setTimeout(type, deleting ? 50 : 100);
+  setTimeout(type, deleting ? 40 : 90);
 }
 
 type();
