@@ -3,56 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>Prachi | DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
+
 <body>
-  
-  <header class="navbar">
-  <h2>Prachi</h2>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2 class="logo">Prachi Deshmukh</h2>
+
   <nav>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-    <button class="resume-btn">Resume</button>
+
+    <a href="Prachi_Resume.pdf" target="_blank">
+      <button class="resume-btn">Resume</button>
+    </a>
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="glass-card">
     <h1>Hi, I'm <span>Prachi</span></h1>
-    <h2 class="typing">DevOps Engineer</h2>
-    <p>I automate cloud infrastructure and reduce deployment time by 70%</p>
-    <button class="cta">View Projects</button>
+    <h2 class="typing"></h2>
+
+    <p>
+      I automate cloud infrastructure and reduce deployment time by 70%
+    </p>
+
+    <div class="buttons">
+      <button class="btn primary">View Projects</button>
+      <a href="Prachi_Resume.pdf" target="_blank">
+        <button class="btn secondary">View Resume</button>
+      </a>
+    </div>
   </div>
 </section>
 
-<section class="about">
+<!-- ABOUT -->
+<section id="about" class="section">
   <div class="card">
     <h2>About Me</h2>
     <p>
-      DevOps Engineer skilled in AWS, Terraform, Jenkins & CI/CD pipelines.
-      Passionate about automation and scalable systems.
+      DevOps Engineer with expertise in AWS, Terraform, Jenkins and CI/CD pipelines.
+      Passionate about automation and scalable infrastructure.
     </p>
   </div>
 </section>
 
-<section class="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    
-    <div class="project-card">
-      <h3>CI/CD Pipeline</h3>
-      <p>Automated deployment using Jenkins & Docker</p>
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>DevOps Engineer</h3>
+      <p>Automated CI/CD pipelines using Jenkins & Terraform</p>
     </div>
 
-    <div class="project-card">
-      <h3>AWS Infra</h3>
-      <p>Provisioned scalable infra using Terraform</p>
+    <div class="timeline-item">
+      <h3>Cloud Automation</h3>
+      <p>Provisioned AWS infrastructure using IaC</p>
     </div>
-
   </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="assets/project1.png" alt="">
+      <h3>CI/CD Pipeline</h3>
+      <p>Jenkins + Docker automation</p>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/project2.png" alt="">
+      <h3>AWS Infrastructure</h3>
+      <p>Terraform provisioning</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: prachi@email.com</p>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
