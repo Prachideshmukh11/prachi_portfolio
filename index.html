@@ -2,86 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prachi | DevOps Engineer</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
+<header class="navbar">
+  <h2 class="logo">Prachi</h2>
   <nav>
-    <h1>Prachi</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="Prachi_Resume.pdf" download class="resume-btn">Resume</a></li>
-    </ul>
+    <a href="#">About</a>
+    <a href="#">Experience</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+    <button class="resume-btn">Resume</button>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Hi, I'm <span>Prachi</span></h2>
-  <p id="typing"></p>
-  <p class="impact">
-    I automate cloud infrastructure and reduce deployment time by 70% 🚀
-  </p>
-</section>
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    DevOps Engineer with expertise in AWS, Terraform, Jenkins, and automation tools.
-    Passionate about building scalable infrastructure and CI/CD pipelines.
-  </p>
-</section>
-
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div class="item">
-      <h3>DevOps Engineer</h3>
-      <p>Automated CI/CD pipelines using Jenkins & Terraform</p>
-    </div>
-    <div class="item">
-      <h3>Cloud Automation</h3>
-      <p>Provisioned AWS infrastructure with IaC</p>
-    </div>
+  <div class="glass-card">
+    <h1>Hi, I'm <span>Prachi</span></h1>
+    <h2 class="typing">DevOps Engineer</h2>
+    <p>I automate cloud infrastructure and reduce deployment time by 70%</p>
+    <button class="cta">View Projects</button>
   </div>
 </section>
 
-<section id="projects">
+<section class="about">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      DevOps Engineer skilled in AWS, Terraform, Jenkins & CI/CD pipelines.
+      Passionate about automation and scalable systems.
+    </p>
+  </div>
+</section>
+
+<section class="projects">
   <h2>Projects</h2>
+  <div class="project-grid">
+    
+    <div class="project-card">
+      <h3>CI/CD Pipeline</h3>
+      <p>Automated deployment using Jenkins & Docker</p>
+    </div>
 
-  <div class="project-card">
-    <h3>CI/CD Pipeline</h3>
-    <p>Jenkins + Docker + AWS deployment pipeline</p>
-    <a href="#">GitHub</a>
+    <div class="project-card">
+      <h3>AWS Infra</h3>
+      <p>Provisioned scalable infra using Terraform</p>
+    </div>
+
   </div>
-
-  <div class="project-card">
-    <h3>Terraform Infra</h3>
-    <p>Automated AWS infra provisioning</p>
-    <a href="#">GitHub</a>
-  </div>
-
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-
-  <p>Email: prachideshmukh030@gmail.com</p>
-  <p>GitHub: https://github.com/yourname</p>
-  <p>LinkedIn: https://linkedin.com/in/yourname</p>
-
-</section>
-
-<footer>
-  <p>© 2026 Prachi | DevOps Engineer</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
