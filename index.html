@@ -1,110 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Prachi | DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css?v=3">
-</head>
-<div class="bg-effects"></div>
-  <div class="bg-effects"></div>
-<canvas id="particles"></canvas>
-<body>
+/* BODY */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #020617;
+  color: #e6edf3;
+  overflow-x: hidden;
+}
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <h2 class="logo">Prachi Deshmukh</h2>
+/* GLOW CONTAINER */
+.bg-effects {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+/* ANIMATED BLOBS */
+.bg-effects::before,
+.bg-effects::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  animation: float 12s infinite ease-in-out;
+}
 
-    <a href="Prachi_Resume.pdf" target="_blank">
-      <button class="resume-btn">Resume</button>
-    </a>
-  </nav>
-</header>
+/* GREEN GLOW */
+.bg-effects::before {
+  background: #00f5a0;
+  top: 10%;
+  left: 10%;
+}
 
-<!-- HERO -->
-<section class="hero">
-  <div class="bg-blur"></div>
+/* BLUE GLOW */
+.bg-effects::after {
+  background: #4facfe;
+  bottom: 10%;
+  right: 10%;
+  animation-delay: 4s;
+}
 
-  <div class="glass-card">
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(60px, -40px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 
-    <!-- PROFILE IMAGE -->
-    <div class="profile-container">
-      <img src="profile.PNG">
-    </div>
-
-    <h1>Hi, I'm <span>Prachi</span></h1>
-    <h2 class="typing"></h2>
-
-    <p>
-      I automate cloud infrastructure and reduce deployment time by 70%
-    </p>
-
-    <div class="buttons">
-      <button class="btn primary">View Projects</button>
-      <a href="Prachi_Resume.pdf" target="_blank">
-        <button class="btn secondary">View Resume</button>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="card">
-    <h2>About Me</h2>
-    <p>
-      DevOps Engineer skilled in AWS, Terraform, Jenkins & CI/CD pipelines.
-      Passionate about automation and scalable systems.
-    </p>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-  <h2>Experience</h2>
-
-  <div class="timeline">
-    <div class="timeline-item">
-      <h3>DevOps Engineer</h3>
-      <p>Automated CI/CD pipelines using Jenkins & Terraform</p>
-    </div>
-
-    <div class="timeline-item">
-      <h3>Cloud Automation</h3>
-      <p>Provisioned AWS infrastructure using IaC</p>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
-
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>CI/CD Pipeline</h3>
-      <p>Jenkins + Docker automation</p>
-    </div>
-
-    <div class="project-card">
-      <h3>AWS Infrastructure</h3>
-      <p>Terraform provisioning</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: prachi@email.com</p>
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
+/* PARTICLES CANVAS */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
