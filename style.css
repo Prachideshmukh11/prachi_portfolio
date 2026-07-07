@@ -111,6 +111,12 @@ body {
 }
 
 /* PROFILE */
+.profile-container {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+               
 .profile-container img {
   width: 180px;
   height: 180px;
