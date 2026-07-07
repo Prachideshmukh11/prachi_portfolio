@@ -112,8 +112,8 @@ body {
 
 /* PROFILE */
 .profile-container img {
-  width: 110px;
-  height: 110px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
 
