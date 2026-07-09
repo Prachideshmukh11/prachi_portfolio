@@ -20,7 +20,7 @@ function type(){
     i=(i+1)%roles.length;
   }
 
-  setTimeout(type,deleting?90:190);
+  setTimeout(type,deleting?100:200);
 }
 type();
 
